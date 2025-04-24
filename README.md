@@ -72,11 +72,11 @@ python tracking/analysis_results.py # need to modify tracker configs and names
 ```
 - GOT10K-test
 ```
-python tracking/test.py lmtrack baseline_got --dataset got10k_test  --runid 100 --threads 8 --num_gpus 2
-python lib/test/utils/transform_got10k.py --tracker_name lmtrack --cfg_name baseline_got_100
+python tracking/test.py lmtrack baseline_384 --dataset got10k_test  --runid 100 --threads 8 --num_gpus 2
+python lib/test/utils/transform_got10k.py --tracker_name lmtrack --cfg_name baseline_384
 ```
 - TrackingNet
 ```
-python tracking/test.py lmtrack baseline --dataset trackingnet  --runid 300 --threads 8 --num_gpus 2
-python lib/test/utils/transform_trackingnet.py --tracker_name lmtrack --cfg_name baseline_300
+python tracking/test.py lmtrack baseline_fullx4_384 --dataset trackingnet  --runid 300 --threads 8 --num_gpus 2
+python lib/test/utils/transform_trackingnet.py --tracker_name lmtrack --cfg_name baseline_fullx4_384
 ```
